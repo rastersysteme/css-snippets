@@ -1,0 +1,121 @@
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Rapid Prototyping Classes
+ *
+ */
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Block Formatting Context
+ *
+ */
+
+.bfc {
+	overflow: hidden;
+}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Clearfix
+ * -> http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ */
+
+.cf:before,
+.cf:after {
+	display: table;
+	content: "";
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Hide Elements
+ *
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+.a11y {
+	position: absolute;
+	top: -32768px;
+	left: -32768px;
+}
+
+/* http://nicolasgallagher.com/another-css-image-replacement-technique/ */
+.hide-text {
+	font: 0/0 serif;
+	text-shadow: none;
+	color: transparent;
+}
+
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.hide-text-alt {
+	overflow: hidden;
+	text-indent: 110%; /* 100% often left a 1px dot at the edge */
+	white-space: nowrap;
+}
+
+/* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   http://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
+.visually-hidden {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Ellipsis …
+ *
+ */
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Float Alternative
+ *
+ */
+
+.ib-parent {
+	display: table;
+	width: 100%;
+	word-spacing: -1em;
+}
+
+.ib-child {
+	display: inline-block;
+	vertical-align: top;
+	word-spacing: 0;
+}
