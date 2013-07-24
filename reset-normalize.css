@@ -1,0 +1,320 @@
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Global Browser Reset
+ * 
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain)
+ *
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Typography Normalize
+ *
+ */
+
+p {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em,
+dfn {
+	font-style: italic;
+}
+
+address {
+	font-style: normal;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #6e6e6e;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	cursor: help;
+}
+
+sub,
+sup {
+	position: relative;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+sub { top: 4px; }
+sup { top: -6px; }
+
+blockquote,
+cite,
+q {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+pre,
+code {
+	background-color: #eee;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+	font-size: 1em;
+}
+
+hr {
+	height: 1px;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-shadow: 0 1px 0 #fff;
+	background-color: #666;
+}
+
+mark {
+	color: #000;
+	background-color: #ff0;
+}
+
+::-moz-selection {
+	text-shadow: none;
+	color: #fff;
+	background: #000;
+}
+
+::selection {
+	text-shadow: none;
+	color: #fff;
+	background: #000;
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Hyperlinks Reset / Normalize
+ *
+ */
+
+a {
+	word-wrap: break-word;
+}
+
+a:focus,
+a:hover,
+a:active {
+	outline: none;
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Element Reset / Normalize
+ *
+ */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-align: left;
+	color: #000;
+	background: #fff;
+}
+
+img {
+	display: block; /* It depends on the website whether I use this or not. */
+	border: 0;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+[disabled] {
+	cursor: not-allowed;
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Button Reset / Normalize
+ *
+ */
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	-webkit-appearance: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: visible;
+	position: relative;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	color: #000;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button:focus,
+button:hover {
+	outline: none; /* I define a :focus- and :hover-state later in my stylesheet. */
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Form Reset / Normalize
+ *
+ */
+
+fieldset {
+	position: relative;
+}
+
+legend {
+	display: none; /* In case of better styling I use a hx-tag. */
+}
+
+input,
+select,
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: none;
+	color: #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none; /* I define a :focus-state later in my stylesheet. */
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	min-height: 72px;
+	resize: vertical;
+}
